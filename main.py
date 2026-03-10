@@ -131,7 +131,7 @@ def square_root(a: str):
 @app.get("/avg/{a}/{b}/{c}", status_code=200)
 def average(a: str, b: str, c: str):
     """
-    a to the power of b.
+    Average the three numbers.
     
     Parameters:
     - a: First number
@@ -141,6 +141,7 @@ def average(a: str, b: str, c: str):
     Returns:
     - JSON object with the result
     """
+
     try: 
         a = float(a)
         b = float(b)
